@@ -3,11 +3,16 @@ Supporting py Scripts
 |_merge.py
 |_delete_extra_Index.py
 
+
+
 These Py scripts only needed to run when the main .ipynb file `main_team_qstar_amazon` ran several times targeting different range of images in the test dataset to extract info resulting in more than 1 CSV files.
 These 2 py files, create one final CSV solution file for the test.csv dataset.
 
+
+
 `merge.py`: It takes prediction from different output CSV files having different indexes and merges it into one CSV file having an index from 0-131287 (Note: test dataset index starts from 0 to 131287) 
 `delete_extra_Index.py`: The below index values were not present in original test dataset but when **merge.py** file run then it creates CSV files containing index 0-131287. So this script deletes these indexes.
+
 
 {
         4613, 121862, 33803, 33804, 33805, 25115, 25116, 124444, 124445,
